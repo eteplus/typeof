@@ -10,13 +10,15 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development webpack --config webpack.config.js --mode=development -w",
     "build": "NODE_ENV=production webpack --config webpack.config.js --mode=production",
     "lint": "eslint .",
-    "test": "ava",
+    "test": "npm run lint && nyc ava",
     "test:watch": "ava --watch",
-    "cover": "cross-env NODE_ENV=test nyc ava",
-    "report": "cross-env NODE_ENV=test nyc report --reporter=text-lcov"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "url": "https://github.com/eteplus/typeof",
+    "type": "git"
   },
   "devDependencies": {
     "ava": "^0.25.0",
@@ -26,7 +28,6 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "coveralls": "^3.0.0",
-    "cross-env": "^5.1.4",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-friendly-formatter": "^4.0.0",

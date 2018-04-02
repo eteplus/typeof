@@ -1,5 +1,9 @@
 language: node_js
 node_js:
-  - '8'
-after_success:
-  - './node_modules/.bin/nyc ava --reporter=text-lcov | ./node_modules/.bin/coveralls'
+- '9'
+- '8'
+- '7'
+after_success: npm run coverage
+env:
+  global:
+    secure: arsHCEPTIIy8DmWp8ANsG8AE7UKs0XplD90GcIch0je0ZPhdbF1RFbO3pTWwLe8051sqS6WBwe1ZfZt1mUrNkSBYG+SGxu573YEQg+IqxhCOD7weOIlABOycUXprA+pTEQ/mEkJ2PMdnfS8aMwugy6gZfZwQZkryUqzOyeJXDOAa9WM6mjhwnFq+yZh6oll+IhxjtQDUu8o2rnDXvgk0GI44So9HzwTrDgrIOwuVTn/G+rKniAD9PUriyifIUYJ9vZ3tBUb8lfoO+GJprpBSmfWpmF0Pp1UsXbLdddPaJHSH2UKwcCm9fqpmru9/3HaNY0JWWTpLkhvjqbNeNTKAwRy61twaQKCmbGdqfpyC3P1NMpSf8RbqXy0gO+W3kJRl0vJtcgWfsUxKNzdzNWGkETtMhpp8PAYBRJphfm1yKM+f9eQD4SGksvs16T/WgT3KreZPx8OQefqtWuLv78F/sCM9II3Vb1NwHrgWO+d8IgDSonfSmurzhnSWmayGVgX36snNRpGQD1VMNwjFsF0Hg5JA3xza97hHQsSgQOgC16CqKDuyf6xag5vXBHUI0hlGyBiE0vSIkp43sEEboI8GrWd+Z0AKDnE2E2DKVKYdePD5yQdYk0I8xbrO7hlP/iqqsomqrElEigbU/dCxizBqVrgUD9tOWoad3Zto9hYy3uI=

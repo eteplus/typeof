@@ -1,5 +1,7 @@
 # typeOf
 
+[![Build Status](https://travis-ci.org/eteplus/typeof.svg?branch=master)](https://travis-ci.org/eteplus/typeof)
+
 > The typeOf method returns a string indicating the type of the value
 
 ## Install
