@@ -1,6 +1,12 @@
 {
   "presets": ["env"],
-  "plugins": ["transform-runtime"],
+  "plugins": [
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false
+      }
+    ]
+  ],
   "env": {
     "test": {
       "sourceMaps": "inline"

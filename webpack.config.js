@@ -10,13 +10,15 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   entry: {
-    typeof: './src/index.js'
+    typeof: './src/typeof.js'
   },
   output: {
     path: resolve('dist'),
     filename: '[name].js',
     libraryTarget: 'umd',
-    library: 'Typeof'
+    library: 'typeOf',
+    libraryExport: 'default',
+    globalObject: 'this'
   },
   devtool: '#source-map',
   module: {
