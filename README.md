@@ -1,6 +1,7 @@
 # typeOf
 
 [![Build Status](https://travis-ci.org/eteplus/typeof.svg?branch=master)](https://travis-ci.org/eteplus/typeof)
+[![Coverage Status](https://coveralls.io/repos/github/eteplus/typeof/badge.svg?branch=master)](https://coveralls.io/github/eteplus/typeof?branch=master)
 
 > The typeOf method returns a string indicating the type of the value
 
