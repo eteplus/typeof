@@ -31,7 +31,7 @@ typeOf(new WeakMap()) // => 'WeakMap'
 <script>
   var type = typeOf('🌟')
   console.log(type) // => 'String'
-<script>
+</script>
 ```
 
 ## API
