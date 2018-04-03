@@ -7,10 +7,12 @@
 ## Install
 
 ```bash
-# npm install @eteplus/typeof
+$ npm install @eteplus/typeof
 ```
 
 ## Usage
+
+> Support `Node` and `Browser`
 
 ```js
 const typeOf = require('@eteplus/typeof')
@@ -22,6 +24,14 @@ typeOf('🌟') // => 'String'
 typeOf(+'a') // => 'NaN'
 
 typeOf(new WeakMap()) // => 'WeakMap'
+```
+
+```html
+<script src="dist/typeof.js"></script>
+<script>
+  var type = typeOf('🌟')
+  console.log(type) // => 'String'
+<script>
 ```
 
 ## API
